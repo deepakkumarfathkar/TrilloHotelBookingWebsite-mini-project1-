@@ -7,7 +7,7 @@ body {
 }
 .background_image {
     width: 100%;
-    height: 320px;
+    height: 250px;
     background-color: #9e9e9e;
     background-image: url("../Images/background_image.JPG");
     background-size: cover;
