@@ -46,8 +46,8 @@ background-color: #66757f;
 color: #fafafa;
 }
 #avatar_container {
-  width: 210px;
-  height: 220px;
+  width: 240px;
+  height: 320px;
   border-radius: 105px;
   display: flex;
   justify-content: center;
