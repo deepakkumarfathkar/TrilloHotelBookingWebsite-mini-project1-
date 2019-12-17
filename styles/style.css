@@ -7,7 +7,7 @@ body {
 }
 .background_image {
   width: 100%;
-  height: 250px;
+  height: 320px;
   background-color: #9e9e9e;
   background-image: url("../images/background_image.jpg");
   background-size: cover;
@@ -48,7 +48,7 @@ color: #fafafa;
 #avatar_container {
   width: 210px;
   height: 210px;
-  border-radius: 100px;
+  border-radius: 105px;
   display: flex;
   justify-content: center;
   align-items: center;
