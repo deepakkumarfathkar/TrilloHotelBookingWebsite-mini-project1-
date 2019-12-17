@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 320px;
   background-color: #9e9e9e;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/background_image.jpg");
   background-size: cover;
   background-position: 0px -90px;
 }
