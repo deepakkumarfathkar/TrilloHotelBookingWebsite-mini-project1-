@@ -58,8 +58,8 @@ color: #fafafa;
   left: 60px;
 }
 #avatar {
-  width: 200px;
-  height: 220px;
+  width: 240px;
+  height: 320px;
   border-radius: 100%;
   object-fit: cover;
 }
