@@ -60,7 +60,7 @@ color: #fafafa;
 #avatar {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 100%;
   object-fit: cover;
 }
 .nav_container {
@@ -133,10 +133,10 @@ color: #fafafa;
 ---------------- about page --------------
 */
 .nav_container_about {
-padding-left: 80px;
+padding-left: 60px;
 }
 #avatar_container_about {
-width: 80px;
+width: 60px;
 height: 100%;
 background-color: rgb(245, 205, 205);
 display: flex;
