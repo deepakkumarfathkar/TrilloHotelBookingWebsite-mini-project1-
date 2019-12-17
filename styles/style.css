@@ -133,10 +133,10 @@ color: #fafafa;
 ---------------- about page --------------
 */
 .nav_container_about {
-padding-left: 40px;
+padding-left: 80px;
 }
 #avatar_container_about {
-width: 40px;
+width: 80px;
 height: 100%;
 background-color: rgb(245, 205, 205);
 display: flex;
