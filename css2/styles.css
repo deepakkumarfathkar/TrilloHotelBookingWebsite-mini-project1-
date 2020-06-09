@@ -1,356 +1,291 @@
 /*FONTS IMPORTS*/
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+
 /*
 ============================
 */
+
+
 /*
 ============================
 */
+
+
 /*
 ===============================
 */
-body, html {
-  width: 100%;
-  height: 100%;
-  background: #d9d9d9;
-  position: relative;
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #d9d9d9;
+    position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 35px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-family: Montserrat, 'Helvetica Neue';
-  letter-spacing: 1px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Montserrat, 'Helvetica Neue';
+    letter-spacing: 1px;
 }
 
 p {
-  margin: 0 0 25px;
-  font-size: 18px;
-  line-height: 1.6em;
-  font-family: 'Lato';
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-family: 'Lato';
 }
 
-.main-nav li > a {
-  -webkit-transition: .2s background ease-in;
-  transition: .2s background ease-in;
-  padding: 10px;
-  color: #fff !important;
-}
 
-.main-nav a:hover {
-  background: darkred;
-  color: #fff !important;
 }
-
-.main-nav li:not(:last-child) {
-  margin-right: 10px;
-}
-
 @media (min-width: 300px) {
-  .jumbotron-heading {
-    font-size: 40px;
-    overflow: hidden;
-  }
+    .sections-heading {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
 }
-
-@media (min-width: 992px) {
-  .jumbotron-heading {
-    font-size: 100px;
-    overflow: hidden;
-  }
-}
-
-.custom-navbar {
-  z-index: 10000;
-}
-
-@media (min-width: 300px) {
-  .sections-heading {
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-}
-
 @media (min-width: 576px) {
-  .sections-heading {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
+    .sections-heading {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
 }
-
 @media (min-width: 768px) {
-  .sections-heading {
-    font-size: 40px;
-  }
+    .sections-heading {
+        font-size: 40px;
+    }
 }
-
 @media (min-width: 992px) {
-  .sections-heading {
-    font-size: 80px;
-  }
+    .sections-heading {
+        font-size: 80px;
+    }
 }
-
 @media (min-width: 1200px) {
-  .sections-heading {
-    font-size: 100px;
-  }
+    .sections-heading {
+        font-size: 100px;
+    }
 }
-
 @media (min-width: 300px) {
-  .sections-paragraph {
-    margin-bottom: 10px;
-  }
+    .sections-paragraph {
+        margin-bottom: 10px;
+    }
 }
-
 @media (min-width: 576px) {
-  .sections-paragraph {
-    margin-bottom: 15px;
-  }
+    .sections-paragraph {
+        margin-bottom: 15px;
+    }
 }
-
 .intro {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.61)), to(rgba(0, 0, 0, 0.61))), url("../img/jumbotron.jpg") no-repeat center bottom scroll;
-  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("../img/jumbotron.jpg") no-repeat center bottom scroll;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  padding: 100px 0;
-  display: table;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.61)), to(rgba(0, 0, 0, 0.61))), url("../img/jumbotron.jpg") no-repeat center bottom scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("../img/jumbotron.jpg") no-repeat center bottom scroll;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+    display: table;
 }
-
 .bg {
-  background: #d9d9d9;
+    background: #d9d9d9;
 }
-
 .sections-padding {
-  padding: 50px 0 100px 0;
+    padding: 50px 0 100px 0;
 }
-
 .button-size {
-  line-height: 1.5;
+    line-height: 1.5;
 }
-
 @media (min-width: 300px) {
-  .button-size {
-    padding: .375rem .75rem;
-    font-size: 1rem;
-  }
+    .button-size {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+    }
 }
-
 @media (min-width: 768px) {
-  .button-size {
-    padding: .425rem 0.85rem;
-    font-size: 1.10rem;
-  }
+    .button-size {
+        padding: .425rem 0.85rem;
+        font-size: 1.10rem;
+    }
 }
-
 @media (min-width: 992px) {
-  .button-size {
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-  }
+    .button-size {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+    }
 }
-
 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 20, 20, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.5);
 }
-
 .overlay-text {
-  position: absolute;
-  z-index: 12;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+    position: absolute;
+    z-index: 12;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
-
 @media (min-width: 300px) {
-  .overlay-text {
-    padding-top: 13%;
-  }
+    .overlay-text {
+        padding-top: 13%;
+    }
 }
-
 @media (min-width: 576px) {
-  .overlay-text {
-    padding-top: 17%;
-  }
+    .overlay-text {
+        padding-top: 17%;
+    }
 }
-
 @media (min-width: 992px) {
-  .overlay-text {
-    padding-top: 11%;
-  }
+    .overlay-text {
+        padding-top: 11%;
+    }
 }
-
 @media (min-width: 1200px) {
-  .overlay-text {
-    padding-top: 13%;
-  }
+    .overlay-text {
+        padding-top: 13%;
+    }
 }
-
 .philosophy .overlay-text h1 {
-  font-style: italic;
+    font-style: italic;
 }
-
 @media (min-width: 300px) {
-  .philosophy .overlay-text {
-    padding-top: 19%;
-  }
+    .philosophy .overlay-text {
+        padding-top: 19%;
+    }
 }
-
 @media (min-width: 576px) {
-  .philosophy .overlay-text {
-    padding-top: 23%;
-  }
+    .philosophy .overlay-text {
+        padding-top: 23%;
+    }
 }
-
 @media (min-width: 992px) {
-  .philosophy .overlay-text {
-    padding-top: 20%;
-  }
+    .philosophy .overlay-text {
+        padding-top: 20%;
+    }
 }
-
 @media (min-width: 1200px) {
-  .philosophy .overlay-text {
-    padding-top: 15%;
-  }
+    .philosophy .overlay-text {
+        padding-top: 15%;
+    }
 }
-
 .bg-container {
-  background: url("../img/car-rent-bg.jpg");
-  position: relative;
-  background-size: cover;
+    background: url("../img/car-rent-bg.jpg");
+    position: relative;
+    background-size: cover;
 }
-
 .modal-title {
-  font-size: 30px;
+    font-size: 30px;
 }
-
 .text-shadow {
-  text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #000;
 }
-
 @media (min-width: 300px) {
-  .iframe {
-    height: 375px;
-  }
+    .iframe {
+        height: 375px;
+    }
 }
-
 @media (min-width: 992px) {
-  .iframe {
-    height: 500px;
-  }
+    .iframe {
+        height: 500px;
+    }
 }
-
 .bg-contact-us {
-  background: url("../img/contact-us.jpg");
+    background: url("../img/contact-us.jpg");
 }
-
 .footer-img {
-  background: url("../img/footer-img.jpg");
-  background-size: cover;
+    background: url("../img/footer-img.jpg");
+    background-size: cover;
 }
-
 .page-scroll {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
 }
-
 .black {
-  -webkit-transition: .4s padding ease-in-out;
-  transition: .4s padding ease-in-out;
-  padding: 5px;
-  background: rgba(20, 20, 20, 0.8) !important;
-  -webkit-box-shadow: 1px 1px 3px #fff;
-          box-shadow: 1px 1px 3px #fff;
+    -webkit-transition: .4s padding ease-in-out;
+    transition: .4s padding ease-in-out;
+    padding: 5px;
+    background: rgba(20, 20, 20, 0.8) !important;
+    -webkit-box-shadow: 1px 1px 3px #fff;
+    box-shadow: 1px 1px 3px #fff;
 }
-
 footer {
-  padding-bottom: 50px !important;
+    padding-bottom: 50px !important;
 }
 
 /*
 ===========================
 */
 .navbar-brand {
-  font-weight: bold;
-  font-family: 'Montserrat';
-  color: orange !important;
-  text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: orange !important;
+    text-shadow: 1px 1px 1px #000;
 }
-
 .jumbotron {
-  background: none;
+    background: none;
 }
-
 .carousel-item {
-  position: relative;
+    position: relative;
 }
-
 @media (min-width: 300px) {
-  .carousel-item {
-    height: auto;
-  }
+    .carousel-item {
+        height: auto;
+    }
 }
-
 @media (min-width: 1200px) {
-  .carousel-item {
-    height: 650px;
-  }
+    .carousel-item {
+        height: 650px;
+    }
 }
-
 .list-group-item {
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
-
 .list-group-item:not(:last-child) {
-  border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
-
 @media (min-width: 300px) {
-  .list-group {
-    width: 55%;
-  }
+    .list-group {
+        width: 55%;
+    }
 }
-
 @media (min-width: 576px) {
-  .list-group {
-    width: 55%;
-  }
+    .list-group {
+        width: 55%;
+    }
 }
-
 @media (min-width: 768px) {
-  .list-group {
-    width: 90%;
-  }
+    .list-group {
+        width: 90%;
+    }
 }
-
 @media (min-width: 992px) {
-  .list-group {
-    width: 70%;
-  }
+    .list-group {
+        width: 70%;
+    }
 }
-
 @media (min-width: 1200px) {
-  .list-group {
-    width: 60%;
-  }
+    .list-group {
+        width: 60%;
+    }
 }
-
 .active {
-  background: red;
+    background: red;
+}
+.custom-navbar {
+    background: rgba(20, 20, 20, 0.4);
+    -webkit-transition: .4s padding ease-in-out;
+    transition: .4s padding ease-in-out;
 }
 
-.custom-navbar {
-  background: rgba(20, 20, 20, 0.4);
-  -webkit-transition: .4s padding ease-in-out;
-  transition: .4s padding ease-in-out;
-}
 /*# sourceMappingURL=styles.css.map */

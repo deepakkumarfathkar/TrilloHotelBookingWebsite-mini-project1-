@@ -1,39 +1,39 @@
 /*FONTS IMPORTS*/
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
 // SASS Functions
+
 /*
 ============================
 */
 
 $path: '../img/';
-
-@function imgPath($img){
+@function imgPath($img) {
     @return url($path + $img);
 }
 
 // SASS Mixins
+
 /*
 ============================
 */
 
-$breakpoints: (
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
-);
-
-@mixin choosed-breakpoint($breakpoint){
-    @if map-has-key($breakpoints, $breakpoint){
-        @media (min-width: map-get($breakpoints, $breakpoint)){
+$breakpoints: ( sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px);
+@mixin choosed-breakpoint($breakpoint) {
+    @if map-has-key($breakpoints,
+    $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
             @content;
         }
-    }@else{
-         @media (min-width: $breakpoint){
-             @content;
-         }
+    }
+    @else {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
     }
 }
 
@@ -41,14 +41,26 @@ $breakpoints: (
 // $primary-color:
 // $secondary-color:
 $bg-color: #d9d9d9;
-
 // MAIN WEBSITE
+
 /*
 ===============================
 */
-body, html { width: 100%; height: 100%; background: $bg-color; position: relative; }
 
-h1, h2, h3, h4, h5, h6{
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: $bg-color;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0 0 35px;
     font-size: 40px;
     text-transform: uppercase;
@@ -56,70 +68,44 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 1px;
 }
 
-p { margin: 0 0 25px; font-size: 18px; line-height: 1.6em; font-family: 'Lato'; }
-
-.main-nav li > a{
-    transition: .2s background ease-in;
-    padding: 10px;
-    color: #fff !important;
-}
-.main-nav a:hover{
-    background: darkred;
-
-    color: #fff !important;
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-family: 'Lato';
 }
 
-.main-nav li:not(:last-child) { margin-right: 10px; }
-
-.jumbotron-heading{
-    @include choosed-breakpoint(300px){
-         font-size: 40px; 
-        overflow: hidden;
-    }
-    @include choosed-breakpoint(lg){
-        font-size: 100px; overflow: hidden;
-    }
-}
-
-.custom-navbar{
-    z-index: 10000;
-}
-
-.sections-heading{
-     @include choosed-breakpoint(300px){
-         font-size: 25px;
-         margin-bottom: 10px;
-     }
-     @include choosed-breakpoint(sm){
-         font-size: 30px;
-         margin-bottom: 15px;
-     }
-     @include choosed-breakpoint(md){
-         font-size: 40px;
-     }
-     @include choosed-breakpoint(lg){
-         font-size: 80px;
-     } 
-     @include choosed-breakpoint(xl){
-         font-size: 100px;
-     } 
-}
-
-.sections-paragraph{
-    @include choosed-breakpoint(300px){
+.sections-heading {
+    @include choosed-breakpoint(300px) {
+        font-size: 25px;
         margin-bottom: 10px;
     }
-    @include choosed-breakpoint(sm){
+    @include choosed-breakpoint(sm) {
+        font-size: 30px;
         margin-bottom: 15px;
     }
- 
+    @include choosed-breakpoint(md) {
+        font-size: 40px;
+    }
+    @include choosed-breakpoint(lg) {
+        font-size: 80px;
+    }
+    @include choosed-breakpoint(xl) {
+        font-size: 100px;
+    }
 }
 
-.intro{
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.61),
-        rgba(0, 0, 0, 0.61)
-      ), imgPath('jumbotron.jpg') no-repeat center bottom scroll;
+.sections-paragraph {
+    @include choosed-breakpoint(300px) {
+        margin-bottom: 10px;
+    }
+    @include choosed-breakpoint(sm) {
+        margin-bottom: 15px;
+    }
+}
+
+.intro {
+    background: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), imgPath('jumbotron.jpg') no-repeat center bottom scroll;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -127,49 +113,50 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.6em; font-family: 'Lato'; 
     display: table;
 }
 
-.bg { background: $bg-color; }
+.bg {
+    background: $bg-color;
+}
 
-.sections-padding { padding: 50px 0 100px 0; }
+.sections-padding {
+    padding: 50px 0 100px 0;
+}
 
-.button-size{
-    @include choosed-breakpoint(300px){
+.button-size {
+    @include choosed-breakpoint(300px) {
         padding: .375rem .75rem;
         font-size: 1rem;
     }
-    @include choosed-breakpoint(md){
+    @include choosed-breakpoint(md) {
         padding: .425rem 0.85rem;
         font-size: 1.10rem;
     }
-    @include choosed-breakpoint(lg){
+    @include choosed-breakpoint(lg) {
         padding: .5rem 1rem;
         font-size: 1.25rem;
     }
     line-height: 1.5;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(20,20,20,.5);
+    background: rgba(20, 20, 20, .5);
 }
 
-.overlay-text{
-    
-    @include choosed-breakpoint(300px){
+.overlay-text {
+    @include choosed-breakpoint(300px) {
         padding-top: 13%;
     }
-    @include choosed-breakpoint(sm){
+    @include choosed-breakpoint(sm) {
         padding-top: 17%;
     }
-    @include choosed-breakpoint(lg){
+    @include choosed-breakpoint(lg) {
         padding-top: 11%;
     }
-    
-    @include choosed-breakpoint(xl){
+    @include choosed-breakpoint(xl) {
         padding-top: 13%;
     }
-
     position:absolute;
     z-index:12;
     height: 100%;
@@ -177,106 +164,131 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.6em; font-family: 'Lato'; 
     text-align:center;
 }
 
-.philosophy .overlay-text h1 {  font-style: italic; }
-.philosophy .overlay-text{
-    @include choosed-breakpoint(300px){
+.philosophy .overlay-text h1 {
+    font-style: italic;
+}
+
+.philosophy .overlay-text {
+    @include choosed-breakpoint(300px) {
         padding-top: 19%;
     }
-    @include choosed-breakpoint(sm){
+    @include choosed-breakpoint(sm) {
         padding-top: 23%;
     }
-    @include choosed-breakpoint(lg){
+    @include choosed-breakpoint(lg) {
         padding-top: 20%;
     }
-    @include choosed-breakpoint(xl){
+    @include choosed-breakpoint(xl) {
         padding-top: 15%;
     }
 }
 
-.bg-container { 
+.bg-container {
     background: imgPath('car-rent-bg.jpg');
     position: relative;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.modal-title { font-size: 30px; }
-.text-shadow { text-shadow: 1px 1px 1px #000; }
+.modal-title {
+    font-size: 30px;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 1px #000;
+}
 
 .iframe {
-    @include choosed-breakpoint(300px){
+    @include choosed-breakpoint(300px) {
         height: 375px;
     }
-    @include choosed-breakpoint(lg){
+    @include choosed-breakpoint(lg) {
         height: 500px;
     }
 }
 
-.bg-contact-us { 
+.bg-contact-us {
     background: imgPath('contact-us.jpg');
 }
 
-.footer-img { background: imgPath('footer-img.jpg'); background-size: cover; }
-
-.page-scroll { transition: transform 1s; }
-
-.black { 
-    transition: .4s padding ease-in-out; 
-    padding: 5px; 
-    background: rgba(20,20,20,0.8) !important; 
-    box-shadow: 1px 1px 3px #fff; 
+.footer-img {
+    background: imgPath('footer-img.jpg');
+    background-size: cover;
 }
 
-footer { padding-bottom: 50px !important; }
+.page-scroll {
+    transition: transform 1s;
+}
+
+.black {
+    transition: .4s padding ease-in-out;
+    padding: 5px;
+    background: rgba(20, 20, 20, 0.8) !important;
+    box-shadow: 1px 1px 3px #fff;
+}
+
+footer {
+    padding-bottom: 50px !important;
+}
+
 // BOOTSTRAP COMPONENTS MODIFICATIONS. WARNING: IT MAY BREAK CASCADING
+
 /*
 ===========================
 */
-.navbar-brand { 
-    font-weight: bold; 
+
+.navbar-brand {
+    font-weight: bold;
     font-family: 'Montserrat';
     color: orange !important;
     text-shadow: 1px 1px 1px #000;
 }
 
-.jumbotron { background: none; }
+.jumbotron {
+    background: none;
+}
 
 .carousel-item {
     position: relative;
-    @include choosed-breakpoint(300px){
+    @include choosed-breakpoint(300px) {
         height: auto;
     }
-    @include choosed-breakpoint(xl){
-        height: 650px;        
+    @include choosed-breakpoint(xl) {
+        height: 650px;
     }
- }
+}
 
- .list-group-item { background: rgba(0,0,0,0.3); color: #fff; }
+.list-group-item {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
 
- .list-group-item:not(:last-child) { border-bottom: 1px solid #aaa; }
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid #aaa;
+}
 
- .list-group{
-     @include choosed-breakpoint(300px){
+.list-group {
+    @include choosed-breakpoint(300px) {
         width: 55%;
-     }
-     @include choosed-breakpoint(sm){
+    }
+    @include choosed-breakpoint(sm) {
         width: 55%;
-     }
-     @include choosed-breakpoint(md){
+    }
+    @include choosed-breakpoint(md) {
         width: 90%;
-     }
-     @include choosed-breakpoint(lg){
+    }
+    @include choosed-breakpoint(lg) {
         width: 70%;
-     }
-     @include choosed-breakpoint(xl){
+    }
+    @include choosed-breakpoint(xl) {
         width: 60%;
-     }
- }
+    }
+}
 
- .active {
-     background: red;
- }
+.active {
+    background: red;
+}
 
-.custom-navbar{
-    background: rgba(20,20,20,.4);
+.custom-navbar {
+    background: rgba(20, 20, 20, .4);
     transition: .4s padding ease-in-out;
-} 
+}
