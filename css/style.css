@@ -51,8 +51,8 @@ body {
 }
 
 .container {
-    max-width: 120rem;
-    margin: 8rem auto;
+    max-width: 150rem;
+    margin: 0rem auto;
     background-color: var(--grey-light);
     -webkit-box-shadow: var(--shadow-dark);
     box-shadow: var(--shadow-dark);
@@ -316,7 +316,7 @@ body {
 
 .user-nav__icon-box {
     position: relative;
-    width: 3.5rem
+    /*width: 3.5rem*/
 }
 
 .user-nav__icon {
@@ -327,8 +327,8 @@ body {
 
 .user-nav__notification {
     font-size: .8rem;
-    height: 1.65rem;
-    width: .95rem;
+    height: 1.75rem;
+    width: 1.75rem;
     border-radius: 50%;
     background-color: var(--color-primary);
     color: white;
