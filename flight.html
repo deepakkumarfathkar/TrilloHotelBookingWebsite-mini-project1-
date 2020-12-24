@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>FMP &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="trillo logo" class="logo">
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search hotels">
+                <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                    <span class="user-nav__notification">88</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                    <span class="user-nav__notification">99</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Deepak</span>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                            <span>Car rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    &copy; 2018 by FMP. All rights reserved.
+                </div>
+            </nav>
+
+
+
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="img/flight-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/flight-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/flight-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Flight booking
+                    </h1>
+                </div>
+
+                <div class="booking-form">
+                    <div class="radio-btn">
+                        <input type="radio" class="btn" name="check" checked="checked"><span>roundtrip</span>
+                        <input type="radio" class="btn" name="check"><span>one way</span>
+                        <input type="radio" class="btn" name="check"><span>multicity</span>
+                    </div>
+
+                    <div class="form-1">
+                        <label>Flying form</label>
+                        <input type="text" class="form-control" placeholder="City or Airport">
+                        <label>Flying to</label>
+                        <input type="text" class="form-control" placeholder="City or Airport">
+
+
+                        <div class="input-grp">
+                            <label>Departing</label>
+                            <input type="date" class="form-control select-date">
+                        </div>
+
+                        <div class="input-grp">
+                            <label>Returning</label>
+                            <input type="date" class="form-control select-date">
+                        </div>
+
+                        <div class="input-grp">
+                            <label>Adults</label>
+                            <input type="number" class="form-control" value="1">
+                        </div>
+
+                        <div class="input-grp">
+                            <label>Children</label>
+                            <input type="number" class="form-control" value="0">
+                        </div>
+
+                        <div class="input-grp">
+                            <label>Travel class</label>
+                            <select class="custom-select">
+                                <option value="1">Economy Class</option>
+                                <option value="2">Business Class</option>
+                            </select>
+                        </div>
+
+                        <div class="input-grp">
+                            <button type="button" class="btn btn-primary flight">Show flights</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </main>
+    </div>
+    </div>
+</body>
+
+</html>
